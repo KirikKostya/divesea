@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Rhombus from './ui/icons/Rhombus';
+import Card from './ui/card/Card';
+import { nftLeaders } from './data/leadersNFT';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+      {
+        nftLeaders.map(prod=>(
+          <Card product={prod} />
+        ))
+      }
     </div>
-  );
+  )
 }
 
 export default App;
