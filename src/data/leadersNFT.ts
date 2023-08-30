@@ -10,7 +10,7 @@ export interface ILeadersNft{
 }
 export const nftLeaders:ILeadersNft[] = [
     {
-      photo: require('../ui/photo/Picture1.png'),
+      photo: require('../ui/photo/Picture0.png'),
       collection: "Alex CA.",
       sender: "by Alex",
       volume: 8.456,
@@ -20,7 +20,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 500,
     },
     {
-      photo: require('../ui/photo/Picture2.png'),
+      photo: require('../ui/photo/Picture1.png'),
       collection: "NFT Collection",
       sender: "by John",
       volume: 12.345,
@@ -30,7 +30,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 700,
     },
     {
-      photo: require('../ui/photo/Picture3.png'),
+      photo: require('../ui/photo/Picture2.png'),
       collection: "Crypto Arts",
       sender: "by Lily",
       volume: 5.678,
@@ -40,7 +40,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 300,
     },
     {
-      photo: require('../ui/photo/Picture4.png'),
+      photo: require('../ui/photo/Picture3.png'),
       collection: "Art Vision",
       sender: "by Mark",
       volume: 20.123,
@@ -50,7 +50,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 1000,
     },
     {
-      photo: require('../ui/photo/Picture5.png'),
+      photo: require('../ui/photo/Picture4.png'),
       collection: "NFT Paradise",
       sender: "by Sarah",
       volume: 15.789,
@@ -60,7 +60,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 800,
     },
     {
-      photo: require('../ui/photo/Picture1.png'),
+      photo: require('../ui/photo/Picture0.png'),
       collection: "Digital Dreams",
       sender: "by Lucas",
       volume: 10.234,
@@ -70,7 +70,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 600,
     },
     {
-      photo: require('../ui/photo/Picture2.png'),
+      photo: require('../ui/photo/Picture1.png'),
       collection: "Visionary Art",
       sender: "by Emma",
       volume: 6.543,
@@ -80,7 +80,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 400,
     },
     {
-      photo: require('../ui/photo/Picture3.png'),
+      photo: require('../ui/photo/Picture2.png'),
       collection: "Art Insights",
       sender: "by Daniel",
       volume: 3.789,
@@ -89,6 +89,33 @@ export const nftLeaders:ILeadersNft[] = [
       owner: 0.7,
       items: 200,
     },
-  ];
+];
+
+interface IPhotoList{
+  id: number
+  photo: string
+}
+export const photosList:IPhotoList[] = [
+  {
+    id: 1,
+    photo: require('../ui/photo/Picture0.png')
+  },
+  {
+    id: 2,
+    photo: require('../ui/photo/Picture1.png')
+  },
+  {
+    id: 3,
+    photo: require('../ui/photo/Picture2.png')
+  },
+  {
+    id: 4,
+    photo: require('../ui/photo/Picture3.png')
+  },
+  {
+    id: 5,
+    photo: require('../ui/photo/Picture4.png')
+  }
+]
 
   

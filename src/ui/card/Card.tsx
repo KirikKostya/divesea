@@ -2,6 +2,7 @@ import React from 'react';
 import Rhombus from '../icons/Rhombus';
 import styles from './Card.module.css';
 import { ILeadersNft } from '../../data/leadersNFT';
+import Button from '../button/Button';
 
 interface ICard{
     product: ILeadersNft
@@ -16,9 +17,7 @@ const Card: React.FC<ICard> = ({product}) => {
                 Current bid
                 <span> <Rhombus />{product.floorPrice}</span>
             </p>
-            <button>
-                Place Bid
-            </button>
+            <Button name='Place Bid' theme='black'/>
         </article>
     </div>
   )

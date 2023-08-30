@@ -1,0 +1,21 @@
+button{
+    border-radius: 11.8px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.blackButton{
+    border: none;
+    color: #FFF;
+    background: #141416;
+    font-size: 14.16px;
+    letter-spacing: .12px;
+    line-height: 150%;
+}
+.whiteButton{
+    border: 1.5px solid black;
+    color: black;
+    background: transparent;
+    font-size: 16.27px;
+    line-height: auto;
+    letter-spacing: 1%;
+}
