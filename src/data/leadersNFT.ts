@@ -24,7 +24,7 @@ export const nftLeaders:ILeadersNft[] = [
       collection: "NFT Collection",
       sender: "by John",
       volume: 12.345,
-      analytics: "15.82%",
+      analytics: "-15.82%",
       floorPrice: 5.2,
       owner: 3.7,
       items: 700,
@@ -34,7 +34,7 @@ export const nftLeaders:ILeadersNft[] = [
       collection: "Crypto Arts",
       sender: "by Lily",
       volume: 5.678,
-      analytics: "9.45%",
+      analytics: "-9.45%",
       floorPrice: 2.8,
       owner: 1.5,
       items: 300,
@@ -64,7 +64,7 @@ export const nftLeaders:ILeadersNft[] = [
       collection: "Digital Dreams",
       sender: "by Lucas",
       volume: 10.234,
-      analytics: "12.35%",
+      analytics: "-12.35%",
       floorPrice: 4.7,
       owner: 2.9,
       items: 600,
@@ -84,14 +84,14 @@ export const nftLeaders:ILeadersNft[] = [
       collection: "Art Insights",
       sender: "by Daniel",
       volume: 3.789,
-      analytics: "5.67%",
+      analytics: "-5.67%",
       floorPrice: 1.4,
       owner: 0.7,
       items: 200,
     },
 ];
 
-interface IPhotoList{
+export interface IPhotoList{
   id: number
   photo: string
 }

@@ -1,0 +1,16 @@
+.article{
+    min-width: 300px;
+    background: #FFF;
+    border-radius: 16px;
+    box-shadow: 10px 10px 50px #14141610;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: -8rem;
+    right: 5rem;
+}
+.article h1{
+    font-size: 21px;
+    line-height: 135%;
+    letter-spacing: .2px;
+    color: #1A202C;
+}

@@ -1,0 +1,11 @@
+.slider{
+    width: 100%;
+    max-width: 1550px;
+    margin: 50px 0;
+}
+.slider .card{
+    padding: 0 160px;
+}
+.bgSlideButtons{
+    background: #FCFCFD;
+}

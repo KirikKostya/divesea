@@ -1,10 +1,12 @@
 import React from 'react';
 import Preview from './preview/Preview';
+import WeeklyTop from './weeklyTop/WeeklyTop';
 
 const Home:React.FC = () => {
   return (
     <>
-        <Preview />
+      <Preview />
+      <WeeklyTop />
     </>
   )
 }

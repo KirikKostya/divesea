@@ -71,8 +71,8 @@
     height: 394px;
     border-radius: 25px;
     object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out; */
+    /* opacity: 0; */
 }
 .preImage{
     width: 319px;
@@ -82,8 +82,8 @@
     position: absolute;
     margin-left: 50px;
     bottom: 0;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out; */
+    /* opacity: 0; */
 }
 .active{
     opacity: 1;
@@ -98,24 +98,6 @@
     right: 0;
     z-index: -1;
 }
-.changeBTNS{
-    width: 165px;
-    height: 70px;
-    background: #F1F1F1;
-    color: black;
-    border-radius: 17.25px ;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.margin{
     margin: 50px 0 0 120px;
-}
-.changeBTNS button{
-    border: none;
-    background: transparent;
-    font-size: 20px;
-}
-.btnBreak{
-    height: 25px;
-    border: 1.4px solid #E6E8EC;
-    border-radius: 2.16px;
 }

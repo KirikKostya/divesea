@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import Button from '../../../ui/button/Button';
 import styles from './Preview.module.css';
 import { photosList } from '../../../data/leadersNFT';
-import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
 import Arrow from '../../../ui/icons/Arrow';
 import Dots from '../../../ui/icons/Dots';
+import SlideButtons from '../../../ui/slideButtons/SlideButtons';
 
 const Preview: React.FC = () => {
 
@@ -40,13 +40,8 @@ const Preview: React.FC = () => {
         <Arrow className={styles.arrow}/>
         <img className={`${styles.preImage} ${activePhoto === 1 ? styles.active : ''}`} src={require(`../../../ui/photo/Picture${activePhoto === 0 ? photosList.length - 1 : activePhoto - 1}.png`)} alt="prePhoto" />
         <Dots className={styles.dots}/>
-        <div className={styles.changeBTNS}>
-          <button onClick={nextPhoto}><ArrowLeftOutlined style={{color: '#929292'}} /></button>
-          <hr className={styles.btnBreak}/>
-          <button onClick={prePhoto}><ArrowRightOutlined style={{color: '#23262F'}}/></button>
-        </div>
+        <SlideButtons className={styles.margin} preHandler={prePhoto} nextHandler={nextPhoto} />
       </div>
-      <p onClick={()=>console.log(activePhoto)}>qwe</p>
     </article>
   )
 }
