@@ -2,12 +2,13 @@ import React from 'react';
 import styles from './Button.module.css';
 
 interface IButton{
-  name: string
+  name: React.ReactNode
   theme: string
+  className?:string
 }
-const Button: React.FC<IButton> = ({name, theme}) => {
+const Button: React.FC<IButton> = ({name, theme, className}) => {
   return (
-    <button className={theme==='black' ? styles.blackButton : styles.whiteButton}>{name}</button>
+    <button className={`${theme==='black' ? styles.blackButton : styles.whiteButton} ${className}`}>{name}</button>
   )
 }
 

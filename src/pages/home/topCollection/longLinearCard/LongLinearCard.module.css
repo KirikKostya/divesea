@@ -1,0 +1,83 @@
+.article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.article::after{
+    content: '';
+    width: 100%;
+    border: 1.69px solid #EBE9E9;
+    position: absolute;
+    bottom: 10px;
+}
+.article .header{
+    display: flex;
+    align-items: center;
+    flex: .45;
+}
+.header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.header .sender{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 28px;
+    line-height: 140%;
+    color: #141416;
+}
+.header .sender span{
+    font-size: 22.76px;
+    line-height: 150%;
+    color: #64748B;
+}
+.article .value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: .08;
+}
+.article .bold{
+    font-size: 24.51px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #141416;
+}
+.bold svg{
+    margin-right: 5px;
+}
+.article .floorPrice{
+    font-size: 24.51px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    color: #10C352;
+}
+.article .ownerAndItem{
+    width: 100%;
+    font-size: 23.65px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    color: #010101;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/**/
+.headerArticle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.itemHeader{
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    color: #93989A
+}

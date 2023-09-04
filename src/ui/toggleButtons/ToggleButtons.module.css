@@ -1,0 +1,11 @@
+.toggleButton{
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-size: 17.67px;
+    line-height: 39.9px;
+    letter-spacing: -0.09px;
+    color: #ACADB9;
+}

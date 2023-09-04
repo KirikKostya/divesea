@@ -11,7 +11,7 @@ const Card: React.FC<ICard> = ({product}) => {
   return (
     <div className={styles.card}>
         <img src={product.photo} alt='photo' className={styles.image} />
-        <header>{product.collection}</header>
+        <header className={styles.header}>{product.collection}</header>
         <article>
             <p>
                 Current bid
