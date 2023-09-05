@@ -1,0 +1,82 @@
+.createAndSellArticle{
+    width: 80%;
+    max-width: 1250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #141416;
+    margin-top: 100px;
+    margin: 100 91px 0;
+    padding: 31px;
+}
+.createAndSellArticle .textPart{
+    flex: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 66px ;
+}
+.textPart h2{
+    color: #FFF;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+    letter-spacing: 0.45px;
+    margin: 0;
+    padding: 0;
+}
+.textPart p{
+    color: #D4D4D4;
+    font-size: 20.265px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    letter-spacing: 0.203px;
+    opacity: 0.6;
+}
+.textPart .btns{
+    display: flex;
+    margin-top: 20px;
+}
+.exploreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12.204px;
+    font-weight: 600;
+    background: #FFF;
+    padding: 14px 25.93px;
+    margin-right: 10px;
+}
+.sellBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: transparent;
+    border: 2.288px solid #FFF;
+    border-radius: 12.204px;
+    padding: 14px 25.93px;
+}
+.createAndSellArticle .photo{
+    width: 340px;
+    height: 239px;
+    flex-shrink: 0;
+    border-radius: 7.554px;
+    background: url('../../../ui/photo/Picture0.png'), lightgray 50% / cover no-repeat;
+    z-index: 1;
+}
+.blur{
+    width: 330px;
+    height: 220px;
+    filter: blur(26.437305450439453px);
+    position: absolute;
+    right: 31px;
+    top: 50px;
+}

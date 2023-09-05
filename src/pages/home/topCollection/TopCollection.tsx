@@ -17,7 +17,7 @@ const TopCollection:React.FC = () => {
   return (
     <div className={styles.container}>
         <h1>Top Collection</h1>
-        <div style={{width: '90%'}}>
+        <div style={{width: '90%', marginBottom: '30px'}}>
             <LongLinearCard />
             {
                 filterArray.map(prod=>(

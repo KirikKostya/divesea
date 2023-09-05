@@ -9,7 +9,7 @@ const WeeklyTop: React.FC = () => {
     <article className={styles.weeklyContainer}>
         <h1 className={styles.header}>Weekly - Top NFT</h1>
         <MySlider />
-        <RecentViewed />
+        <RecentViewed positionClass={styles.recentViewedPosition}/>
     </article>
   )
 }
