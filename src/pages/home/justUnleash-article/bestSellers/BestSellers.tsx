@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './BestSellecrs.module.scss';
-import { nftLeaders } from '../../../../data/leadersNFT';
+import { nftLeaders } from '../../../../data/DATA';
 import ListItemOfBest from './listItemOfBest/ListItemOfBest';
 
 const BestSellers: React.FC = () => {

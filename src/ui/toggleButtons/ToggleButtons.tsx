@@ -1,5 +1,5 @@
 import React from 'react';
-import { ILeadersNft } from '../../data/leadersNFT';
+import { ILeadersNft } from '../../data/DATA';
 import { IFunc } from '../../pages/home/topCollection/TopCollection';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import styles from './ToggleButtons.module.scss';

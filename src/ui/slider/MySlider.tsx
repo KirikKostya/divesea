@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { nftLeaders } from '../../data/leadersNFT';
+import { nftLeaders } from '../../data/DATA';
 import Card from '../card/Card';
 import SlideButtons from '../slideButtons/SlideButtons';
 import Slider from "react-slick";

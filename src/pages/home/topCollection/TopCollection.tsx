@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { ILeadersNft, nftLeaders } from '../../../data/leadersNFT';
+import { ILeadersNft, nftLeaders } from '../../../data/DATA';
 import LongLinearCard from './longLinearCard/LongLinearCard';
 import ToggleButtons from '../../../ui/toggleButtons/ToggleButtons';
 import styles from './TopCollection.module.scss';

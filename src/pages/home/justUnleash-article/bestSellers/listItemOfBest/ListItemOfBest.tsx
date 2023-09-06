@@ -1,5 +1,5 @@
 import React from 'react';
-import { ILeadersNft } from '../../../../../data/leadersNFT';
+import { ILeadersNft } from '../../../../../data/DATA';
 import FollowButtons from '../../../../../ui/followButtons/FollowButton';
 import styles from './ListItemOfBest.module.scss';
 

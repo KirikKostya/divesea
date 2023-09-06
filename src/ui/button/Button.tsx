@@ -5,10 +5,11 @@ interface IButton{
   name: React.ReactNode
   theme: string
   className?:string
+  onClick?: ()=>void
 }
-const Button: React.FC<IButton> = ({name, theme, className}) => {
+const Button: React.FC<IButton> = ({name, theme, className, onClick}) => {
   return (
-    <button className={`${theme==='black' ? styles.blackButton : styles.whiteButton} ${className}`}>{name}</button>
+    <button onClick={onClick} className={`${theme==='black' ? styles.blackButton : styles.whiteButton} ${className}`}>{name}</button>
   )
 }
 

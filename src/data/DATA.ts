@@ -1,4 +1,5 @@
 export interface ILeadersNft{
+    id: string
     photo: string
     collection: string
     sender: string
@@ -10,6 +11,7 @@ export interface ILeadersNft{
 }
 export const nftLeaders:ILeadersNft[] = [
     {
+      id: 'QASDE21',
       photo: require('../ui/photo/Picture0.png'),
       collection: "Alex CA.",
       sender: "by Alex",
@@ -20,6 +22,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 500,
     },
     {
+      id: 'QWERF25',
       photo: require('../ui/photo/Picture1.png'),
       collection: "NFT Collection",
       sender: "by John",
@@ -30,6 +33,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 700,
     },
     {
+      id: 'PLAKD87',
       photo: require('../ui/photo/Picture2.png'),
       collection: "Crypto Arts",
       sender: "by Lily",
@@ -40,6 +44,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 300,
     },
     {
+      id: 'ZXCFV23',
       photo: require('../ui/photo/Picture3.png'),
       collection: "Art Vision",
       sender: "by Mark",
@@ -50,6 +55,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 1000,
     },
     {
+      id: 'MVNHF34',
       photo: require('../ui/photo/Picture4.png'),
       collection: "NFT Paradise",
       sender: "by Sarah",
@@ -60,6 +66,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 800,
     },
     {
+      id: 'KJGHU56',
       photo: require('../ui/photo/Picture0.png'),
       collection: "Digital Dreams",
       sender: "by Lucas",
@@ -70,6 +77,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 600,
     },
     {
+      id: 'ASDFG12',
       photo: require('../ui/photo/Picture1.png'),
       collection: "Visionary Art",
       sender: "by Emma",
@@ -80,6 +88,7 @@ export const nftLeaders:ILeadersNft[] = [
       items: 400,
     },
     {
+      id: 'KDPDD43',
       photo: require('../ui/photo/Picture2.png'),
       collection: "Art Insights",
       sender: "by Daniel",

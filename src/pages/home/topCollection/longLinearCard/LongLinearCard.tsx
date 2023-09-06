@@ -1,5 +1,5 @@
 import React from 'react';
-import { ILeadersNft } from '../../../../data/leadersNFT';
+import { ILeadersNft } from '../../../../data/DATA';
 import Rhombus from '../../../../ui/icons/Rhombus';
 import styles from './LongLinearCard.module.scss';
 

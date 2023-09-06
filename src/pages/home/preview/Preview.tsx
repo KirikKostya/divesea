@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Button from '../../../ui/button/Button';
-import { photosList } from '../../../data/leadersNFT';
+import { photosList } from '../../../data/DATA';
 import Arrow from '../../../ui/icons/Arrow';
 import Dots from '../../../ui/icons/Dots';
 import SlideButtons from '../../../ui/slideButtons/SlideButtons';

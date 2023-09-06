@@ -1,6 +1,6 @@
 import React from 'react';
 import LinearCard from '../linearCard/LinearCard';
-import { nftLeaders } from '../../../../data/leadersNFT';
+import { nftLeaders } from '../../../../data/DATA';
 import styles from './RecentViewed.module.scss';
 
 const RecentViewed:React.FC<{positionClass: string}> = ({ positionClass }) => {

@@ -1,38 +1,33 @@
-import React, { useMemo, useState } from 'react';
-import Button from '../../../ui/button/Button';
+import React from 'react';
+import AllProducts from '../../../ui/allProducts/AllProducts';
+import { IListOfBtns } from '../../../ui/buttonList/ButtonList';
 import CategoryIcon from '../../../ui/icons/CategoryIcon';
 import CollectionIcon from '../../../ui/icons/CollectionIcon';
 import PriceIcon from '../../../ui/icons/PriceIcon';
-import { ILeadersNft, nftLeaders } from '../../../data/leadersNFT';
-import Card from '../../../ui/card/Card';
-import ToggleButtons from '../../../ui/toggleButtons/ToggleButtons';
-import { IFunc } from '../topCollection/TopCollection';
-import styles from './ExploreMarketplace.module.scss';
 
 const ExploreMarketplace:React.FC = () => {
 
-    const [filter, setFilter] = useState<IFunc>({func: (el:ILeadersNft[])=>el});
+    const exploreMarketBTNS: IListOfBtns[] = [
+        {
+            id: 0,
+            value: 'All'
+        },
+        {
+            id: 1,
+            value: <><CategoryIcon/> Category</>
+        },
+        {
+            id: 2,
+            value: <><CollectionIcon /> Collection</>
+        },
+        {
+            id: 3,
+            value: <><PriceIcon /> Price</>
+        },
+    ]
     
-    let filterArray = useMemo(()=>filter.func(nftLeaders), [filter.func])
-
   return (
-    <article className={styles.container}>
-        <h1>Explore Marketplace</h1>
-        <div className={styles.buttons}>
-            <Button className={styles.margin} name='All' theme='white'/>
-            <Button className={styles.margin} name={<p className={styles.button}><CategoryIcon/> Category</p>} theme='white'/>
-            <Button className={styles.margin} name={<p className={styles.button}><CollectionIcon /> Collection</p>} theme='white'/>
-            <Button className={styles.margin} name={<p className={styles.button}><PriceIcon/> Price</p>} theme='white'/>
-        </div>
-        <div className={styles.cardContainer}>
-            {
-                filterArray.map(prod=>(
-                    <Card key={prod.collection} product={prod} />
-                ))
-            }
-        </div>
-        <ToggleButtons filterArray={filterArray} setFilter={setFilter}/>
-    </article>
+    <AllProducts header='Explore Marketplace' btns={exploreMarketBTNS} />
   )
 }
 

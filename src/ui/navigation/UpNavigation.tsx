@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../../../ui/icons/Logo';
-import Button from '../../../ui/button/Button';
+import Logo from '../../ui/icons/Logo';
+import Button from '../../ui/button/Button';
 import { NavLink, useNavigate } from 'react-router-dom';
-import Search from '../../../ui/icons/Search';
+import Search from '../../ui/icons/Search';
 import styles from './UpNavigation.module.scss';
 
 const UpNavigation: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../../ui/icons/Logo';
+import Logo from '../icons/Logo';
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
 import styles from './Footer.module.scss';
 

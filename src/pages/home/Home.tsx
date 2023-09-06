@@ -5,7 +5,7 @@ import TopCollection from './topCollection/TopCollection';
 import ExploreMarketplace from './exploreMarketplace/ExploreMarketplace';
 import JustUnleash from './justUnleash-article/JustUnleash';
 import CreateSell from './create&Sell/CreateSell';
-import Footer from './footer/Footer';
+import Footer from '../../ui/footer/Footer';
 
 const Home:React.FC = () => {
   return (
@@ -16,7 +16,6 @@ const Home:React.FC = () => {
       <ExploreMarketplace />
       <JustUnleash />
       <CreateSell />
-      <Footer />
     </>
   )
 }
