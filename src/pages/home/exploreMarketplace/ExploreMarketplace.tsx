@@ -3,11 +3,11 @@ import Button from '../../../ui/button/Button';
 import CategoryIcon from '../../../ui/icons/CategoryIcon';
 import CollectionIcon from '../../../ui/icons/CollectionIcon';
 import PriceIcon from '../../../ui/icons/PriceIcon';
-import styles from './ExploreMarketplace.module.css';
 import { ILeadersNft, nftLeaders } from '../../../data/leadersNFT';
 import Card from '../../../ui/card/Card';
 import ToggleButtons from '../../../ui/toggleButtons/ToggleButtons';
 import { IFunc } from '../topCollection/TopCollection';
+import styles from './ExploreMarketplace.module.scss';
 
 const ExploreMarketplace:React.FC = () => {
 

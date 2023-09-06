@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Button from '../../../ui/button/Button';
-import styles from './Preview.module.css';
 import { photosList } from '../../../data/leadersNFT';
 import Arrow from '../../../ui/icons/Arrow';
 import Dots from '../../../ui/icons/Dots';
 import SlideButtons from '../../../ui/slideButtons/SlideButtons';
+import styles from './Preview.module.scss';
 
 const Preview: React.FC = () => {
 
@@ -19,6 +19,7 @@ const Preview: React.FC = () => {
     setActivePhoto((prevIndex) => (prevIndex === photosList.length - 1 ? 0 : prevIndex + 1))
     setActive((prevIndex) => (prevIndex === photosList.length - 1 ? 0 : prevIndex + 1))
   }
+  
   return (
     <article className={styles.previewContainer}>
       <div className={styles.info}>

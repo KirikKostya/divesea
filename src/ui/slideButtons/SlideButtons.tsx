@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
-import styles from './SlideButtons.module.css'
+import styles from './SlideButtons.module.scss'
 
 interface ISlideButtons{
   className?: string,

@@ -1,9 +1,8 @@
 import React, { useMemo, useState } from 'react';
-import styles from './TopCollection.module.css';
 import { ILeadersNft, nftLeaders } from '../../../data/leadersNFT';
 import LongLinearCard from './longLinearCard/LongLinearCard';
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import ToggleButtons from '../../../ui/toggleButtons/ToggleButtons';
+import styles from './TopCollection.module.scss';
 
 export interface IFunc{
     func: (el: ILeadersNft[]) => ILeadersNft[]

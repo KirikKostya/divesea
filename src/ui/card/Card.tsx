@@ -1,8 +1,8 @@
 import React from 'react';
 import Rhombus from '../icons/Rhombus';
-import styles from './Card.module.css';
 import { ILeadersNft } from '../../data/leadersNFT';
 import Button from '../button/Button';
+import styles from './Card.module.scss';
 
 interface ICard{
     product: ILeadersNft

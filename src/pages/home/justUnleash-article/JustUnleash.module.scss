@@ -1,0 +1,76 @@
+.unleashArticle{
+    width: 100%;
+    max-width: 1250px;
+    border-top: 0.71px solid #CBCBCB;
+    padding: 100px 0 30px 0;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .infoPath{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 90px;
+        
+        h2{
+            width: 100%;
+            color: #18181B;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 54.4px;
+            text-transform: capitalize;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 span{
+            color: #C5C5C5 !important;
+        }
+
+        .list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 45px 0 70px 0;
+            padding: 0;
+            
+            li{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                color: #12141D;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                margin: 6px 0;
+                
+                svg{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .graphPath{
+        width: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .newBindPosition{
+            top: 0px;
+            right: 2rem;
+        }
+        
+        .recentViewed{
+            bottom: -65px;
+            left: -50px;
+        }
+    }
+}

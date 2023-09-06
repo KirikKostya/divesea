@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../../ui/icons/Logo';
-import styles from './Footer.module.css';
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
+import styles from './Footer.module.scss';
 
 const Footer: React.FC = () => {
   return (

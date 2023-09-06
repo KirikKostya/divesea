@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './ListItemOfBest.module.css';
 import { ILeadersNft } from '../../../../../data/leadersNFT';
 import FollowButtons from '../../../../../ui/followButtons/FollowButton';
+import styles from './ListItemOfBest.module.scss';
 
 const ListItemOfBest:React.FC<{item: ILeadersNft}>= ({ item }) => {
   return (

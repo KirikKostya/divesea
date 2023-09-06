@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '../../../ui/button/Button';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import CheckMark from '../../../ui/icons/CheckMark';
-import styles from './JustUnleash.module.css';
 import NewBid from './newBid/NewBid';
 import BestSellers from './bestSellers/BestSellers';
 import RecentViewed from '../weeklyTop/recentViewed/RecentViewed';
+import styles from './JustUnleash.module.scss';
 
 const JustUnleash: React.FC = () => {
   return (

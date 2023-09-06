@@ -1,7 +1,4 @@
 import React from 'react';
-import Rhombus from './ui/icons/Rhombus';
-import Card from './ui/card/Card';
-import { nftLeaders } from './data/leadersNFT';
 import Router from './router/Router';
 
 const App: React.FC = () => {

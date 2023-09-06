@@ -2,12 +2,13 @@ import React from 'react';
 import Logo from '../../../ui/icons/Logo';
 import Button from '../../../ui/button/Button';
 import { NavLink, useNavigate } from 'react-router-dom';
-import styles from './UpNavigation.module.css';
 import Search from '../../../ui/icons/Search';
+import styles from './UpNavigation.module.scss';
 
 const UpNavigation: React.FC = () => {
 
   const nav = useNavigate();
+  
   return (
     <nav className={styles.navigation}>
         <Logo onClick={()=>nav('/')}/>

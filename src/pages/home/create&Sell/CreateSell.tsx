@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CreateSell.module.css';
+import styles from './CreateSell.module.scss';
 
 const CreateSell: React.FC = () => {
   return (

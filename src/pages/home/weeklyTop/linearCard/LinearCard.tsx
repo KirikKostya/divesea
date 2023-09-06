@@ -1,7 +1,7 @@
 import React from 'react';
 import { ILeadersNft } from '../../../../data/leadersNFT';
 import Rhombus from '../../../../ui/icons/Rhombus';
-import styles from './LinearCard.module.css';
+import styles from './LinearCard.module.scss';
 
 interface ILinearCard{
     product: ILeadersNft

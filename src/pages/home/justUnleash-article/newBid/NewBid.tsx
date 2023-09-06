@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './NewBid.module.css';
+import styles from './NewBid.module.scss';
 
 const NewBid: React.FC<{position: string}> = ({ position }) => {
 

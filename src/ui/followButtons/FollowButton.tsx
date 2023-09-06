@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './FollowButton.module.css';
+import styles from './FollowButton.module.scss';
 
 interface IFollowButtonProps{
   isClicked: boolean

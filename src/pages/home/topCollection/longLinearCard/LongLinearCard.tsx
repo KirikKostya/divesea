@@ -1,7 +1,7 @@
 import React from 'react';
 import { ILeadersNft } from '../../../../data/leadersNFT';
-import styles from './LongLinearCard.module.css';
 import Rhombus from '../../../../ui/icons/Rhombus';
+import styles from './LongLinearCard.module.scss';
 
 const LongLinearCard: React.FC<{product?: ILeadersNft}> = ({product}) => {
   return (

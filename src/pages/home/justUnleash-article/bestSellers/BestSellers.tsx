@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BestSellecrs.module.css';
+import styles from './BestSellecrs.module.scss';
 import { nftLeaders } from '../../../../data/leadersNFT';
 import ListItemOfBest from './listItemOfBest/ListItemOfBest';
 
