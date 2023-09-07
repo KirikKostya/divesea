@@ -5,6 +5,9 @@ import Home from '../pages/home/Home';
 import Footer from '../ui/footer/Footer';
 import Discover from '../pages/discover/Discover';
 import CardDetails from '../pages/cardDatails/CardDetails';
+import Creators from '../pages/creators/Creators';
+import Stats from '../pages/stats/Stats';
+import Sell from '../pages/sell/Sell';
 
 const Router:React.FC = () => {
 
@@ -16,6 +19,9 @@ const Router:React.FC = () => {
           <Route path='/' element={<Home />} />
           <Route path='/DISCOVER' element={<Discover />} />
           <Route path='/DISCOVER/:id' element={<CardDetails />} />
+          <Route path='/CREATORS' element={<Creators />} />
+          <Route path='/Sell' element={<Sell />} />
+          <Route path='/STATS' element={<Stats />} />
       </Routes>
       <Footer />
     </BrowserRouter>
