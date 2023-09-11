@@ -13,7 +13,7 @@ const ToggleButtons:React.FC<IToggleButtonsProps> = (props) => {
     const {filterArray, setFilter} = props;
     
   return (
-    <div style={{width: '90%', display: 'flex', flexDirection: 'row-reverse'}}>
+    <div className={styles.toggleContainer}>
         {
           filterArray.length===4
               ? <button className={styles.toggleButton} onClick={()=>setFilter({func: (el:ILeadersNft[])=>el})}>Explore All <ArrowRightOutlined style={{color: '#ACADB9', marginLeft: '5px'}} /></button>

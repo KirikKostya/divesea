@@ -118,14 +118,23 @@
         }
         .selectPhoto{
             width: 400px;
-            height: 200px;
+            height: 300px;
             flex-shrink: 0;
             border-radius: 30.685px;
         }
-        .fileInpute{
-            button{
-                display: none;
-            }
+        .fileInput{
+            opacity: 0;
+        }
+        .btnUploud{
+            position: absolute;
+            cursor: pointer;
+            color: #FFF;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0.45px;
+            text-transform: capitalize;
         }
     }
 }

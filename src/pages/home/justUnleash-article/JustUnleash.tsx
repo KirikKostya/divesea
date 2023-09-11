@@ -20,7 +20,7 @@ const JustUnleash: React.FC = () => {
                 <li><CheckMark /> Easy Buying and Selling</li>
                 <li><CheckMark /> Join Our Community</li>
             </ul>
-            <Button name={<span>Explore more <ArrowRightOutlined /></span>} theme='black' />
+            <Button name={<span>Explore more <ArrowRightOutlined /></span>} className={styles.btn} theme='black' />
         </div>
         <div className={styles.graphPath}>
           <NewBid position={styles.newBindPosition}/>

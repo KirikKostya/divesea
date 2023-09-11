@@ -21,7 +21,7 @@ const MySlider:React.FC = () => {
 
     const settings = {
         className: styles.slider,
-        slidesToShow: 4,
+        slidesToShow: 3.5,
         speed: 500,
         swipeToSlide: true,
         slidesToScroll: 1,
@@ -34,7 +34,7 @@ const MySlider:React.FC = () => {
     const next = () => {
         if (sliderRef.current) {
             sliderRef.current.slickNext();
-        }
+        }  
     };
 
     const previous = () => {

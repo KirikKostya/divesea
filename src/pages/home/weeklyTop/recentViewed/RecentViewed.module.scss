@@ -13,3 +13,25 @@
         color: #1A202C;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .article{
+        min-width: 229.069px;
+
+        h1{
+            font-size: 13.179px;
+            letter-spacing: 0.126px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .article{
+        min-width: 153.994px;
+        
+        h1{
+            font-size: 8.86px;
+            letter-spacing: 0.084px;
+        }
+    }
+}

@@ -5,11 +5,13 @@ import Arrow from '../../../ui/icons/Arrow';
 import Dots from '../../../ui/icons/Dots';
 import SlideButtons from '../../../ui/slideButtons/SlideButtons';
 import styles from './Preview.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const Preview: React.FC = () => {
 
   const [activePhoto, setActivePhoto] = useState<number>(1); 
   const [active, setActive] = useState<number>(1);
+  const nav =  useNavigate();
 
   const prePhoto = ()=>{
     setActivePhoto((prevIndex) => (prevIndex === 0 ? photosList.length - 1 : prevIndex - 1));
@@ -27,8 +29,8 @@ const Preview: React.FC = () => {
           <h1>Discover And<br/> Create NFTs</h1>
           <p>Discover, Create and Sell NFTs On Our NFT Marketplace<br/> With Over Thousands Of NFTs And Get a <span>$20 bonus</span>.</p>
           <div className={styles.buttons}>
-              <Button name='EXPLORE MORE' theme='black' />
-              <Button name='CREATE NFT' theme='white' />
+              <Button onClick={()=>nav('/DISCOVER')} name='EXPLORE MORE' theme='black' />
+              <Button onClick={()=>nav('/SELL')} name='CREATE NFT' theme='white' />
           </div>
           <ul>
               <li><span>430K+</span>Art Works</li>

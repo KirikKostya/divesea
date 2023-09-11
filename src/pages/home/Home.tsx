@@ -5,17 +5,16 @@ import TopCollection from './topCollection/TopCollection';
 import ExploreMarketplace from './exploreMarketplace/ExploreMarketplace';
 import JustUnleash from './justUnleash-article/JustUnleash';
 import CreateSell from './create&Sell/CreateSell';
-import Footer from '../../ui/footer/Footer';
 
 const Home:React.FC = () => {
   return (
     <>
       <Preview />
-      <WeeklyTop />
+      {/* <WeeklyTop /> */} {/*NONE*/}
       <TopCollection />
       <ExploreMarketplace />
       <JustUnleash />
-      <CreateSell />
+      {/* <CreateSell /> */}
     </>
   )
 }

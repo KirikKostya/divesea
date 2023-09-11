@@ -24,3 +24,37 @@
     border: 1.741px solid #E6E8EC;
 }
 /**/
+
+@media screen and (max-width: 1024px) {
+    .followBtn{
+        font-size: 8.68px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 9.92px; 
+    }
+
+    .follow{
+        border: 1.24px solid #E6E8EC;
+    }
+
+    .unFollow{
+        border-radius: 4.96px;
+        border: 1.24px solid #E6E8EC;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .followBtn{
+        font-size: 5.825px;
+        line-height: 6.657px;
+    }
+
+    .follow{
+        border: 0.832px solid var(--neutrals-6, #E6E8EC);
+    }
+
+    .unFollow{
+        border-radius: 3.5px;
+        border: 0.832px solid #E6E8EC;
+    }
+}

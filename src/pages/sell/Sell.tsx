@@ -53,7 +53,7 @@ const Sell: React.FC = () => {
                                 <p>PNG, GIF, WEBP, MP4 or MP3. Max 1Gb.</p>
                             </div>
                 }
-                <Button theme='black' name={<input type={'file'} className={styles.fileInpute}/>} className={styles.btn}/>
+                <Button theme='black' name={<><p className={styles.btnUploud}>Upload</p><input type={'file'} accept="image/jpeg, image/png, image/jpg" onChange={(e:any)=>setPhoto(URL.createObjectURL(e.target.files[0]))} className={styles.fileInput}/></>} className={styles.btn}/>
             </div>
         </div>
     </article>  
