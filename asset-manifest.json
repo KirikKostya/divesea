@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DiveSea/static/css/main.79836025.css",
-    "main.js": "/DiveSea/static/js/main.9dc421c7.js",
+    "main.js": "/DiveSea/static/js/main.7b6ba212.js",
     "static/js/787.58967804.chunk.js": "/DiveSea/static/js/787.58967804.chunk.js",
     "static/media/Picture0.png": "/DiveSea/static/media/Picture0.19d47e8d4089914fb4e1.png",
     "static/media/Picture1.png": "/DiveSea/static/media/Picture1.3a0c3678a0710d10bc69.png",
@@ -14,11 +14,11 @@
     "static/media/slick.woff": "/DiveSea/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/DiveSea/index.html",
     "main.79836025.css.map": "/DiveSea/static/css/main.79836025.css.map",
-    "main.9dc421c7.js.map": "/DiveSea/static/js/main.9dc421c7.js.map",
+    "main.7b6ba212.js.map": "/DiveSea/static/js/main.7b6ba212.js.map",
     "787.58967804.chunk.js.map": "/DiveSea/static/js/787.58967804.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79836025.css",
-    "static/js/main.9dc421c7.js"
+    "static/js/main.7b6ba212.js"
   ]
 }
