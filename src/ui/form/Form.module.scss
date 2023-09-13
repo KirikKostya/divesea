@@ -38,10 +38,31 @@
     }
     .textArea{
         resize: none;
-        min-height: 165px;
-
-        
+        min-height: 165px;   
     }
+}
 
-
+@media screen and (max-width: 1024px) {
+    .form{
+        .header{
+            font-size: 14.224px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 124.5%;
+        }
+        .input{
+            font-size: 9.563px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 124.5%;
+            padding: 18px 11px 17px 21px;
+            
+            &::placeholder{
+                font-size: 9.563px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 124.5%;
+            }
+        }
+    }
 }

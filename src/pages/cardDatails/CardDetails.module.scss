@@ -183,3 +183,201 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .article{
+        img{
+            width: 40%;
+            height: 310px;
+            flex-shrink: 0;
+            border-radius: 23.973px;
+        }
+    
+        .textInfo{
+            h2{
+                font-size: 36.301px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22.63px;
+            }
+    
+            .discription{
+                font-size: 13.514px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20.721px;
+            }
+    
+            .createdBy{
+                article{
+                    img{
+                        width: 46.688px;
+                        height: 46.688px;
+                        flex-shrink: 0;
+                    }
+                    p{
+                        font-size: 18.183px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 27.881px;
+    
+                        span{
+                            font-size: 12.575px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+    
+            .metrics{
+                article{
+                    p{
+                        font-size: 12.702px !important;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 15.634px;
+    
+                        svg{
+                            width: 23.461px;
+                        }
+    
+                        span{
+                            font-size: 23.461px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                         
+                        .date{
+                            font-size: 13.679px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 21.496px; 
+                        }
+                    }
+                }
+            }
+    
+            .btn{
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .btnText{
+                    font-size: 13.082px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20.059px;
+        
+                    svg{
+                        width: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .article{
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 100%;
+            height: 330px;
+            flex-shrink: 0;
+            border-radius: 23.973px;
+        }
+    
+        .textInfo{
+            h2{
+                font-size: 15.638px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22.588px;
+                margin-top: 10px;
+            }
+    
+            .discription{
+                width: 100%;
+                font-size: 13.031px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19.981px;
+            }
+    
+            .createdBy{
+                width: 100%;
+                article{
+                    img{
+                        width: 33.46px;
+                        height: 33.46px;
+                    }
+                    p{
+                        font-size: 13.031px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 19.981px;
+    
+                        span{
+                            font-size: 9.012px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+    
+            .metrics{
+                width: 100%;
+                article{
+                    p{
+                        font-size: 10.549px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 12.984px;
+    
+                        svg{
+                            width: 10.549px;
+                        }
+    
+                        span{
+                            font-size: 19.484px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                         
+                        .date{
+                            font-size: 11.361px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 17.853px;
+                        }
+                    }
+                }
+            }
+    
+            .btn{
+                width: 100%;
+
+                .btnText{
+                    font-size: 10.707px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 16.417px;
+        
+                    svg{
+                        width: 10.707px;
+                    }
+                }
+            }
+        }
+    }
+}

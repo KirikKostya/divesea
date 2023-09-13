@@ -5,15 +5,17 @@ interface IFormProps{
     header: string
     placeholder: string
     isTextarea?: boolean
+    onChange: React.Dispatch<React.SetStateAction<string>>
+    value: string
 } 
-const Form:React.FC<IFormProps> = ({header, placeholder, isTextarea}) => {
+const Form:React.FC<IFormProps> = ({header, placeholder, isTextarea, onChange, value}) => {
   return (
     <label className={styles.form}>
         <h3 className={styles.header}>{header}</h3>
         {
             isTextarea
-                ? <textarea className={`${styles.input} ${styles.textArea}`} placeholder={placeholder} />
-                    : <input type="text" placeholder={placeholder} className={styles.input} />
+                ? <textarea value={value} onChange={(e:any)=>onChange(e.target.value)} className={`${styles.input} ${styles.textArea}`} placeholder={placeholder} />
+                    : <input value={value} onChange={(e:any)=>onChange(e.target.value)} type="text" placeholder={placeholder} className={styles.input} />
 
         }
     </label>

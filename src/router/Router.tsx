@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import UpNavigation from '../ui/navigation/UpNavigation';
 import Home from '../pages/home/Home';
 import Footer from '../ui/footer/Footer';
@@ -12,7 +12,7 @@ import Sell from '../pages/sell/Sell';
 const Router:React.FC = () => {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <UpNavigation />
       <Routes>
           <Route path='*' element={<h2>Not found !</h2>} />
@@ -24,7 +24,7 @@ const Router:React.FC = () => {
           <Route path='/STATS' element={<Stats />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

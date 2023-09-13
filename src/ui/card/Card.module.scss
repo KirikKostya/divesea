@@ -101,3 +101,48 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 283.457px;
+        height: 405.617px;
+        flex-shrink: 0;
+        border-radius: 23.674px;
+        
+        .image{
+            width: 282.511px;
+            height: 285.103px;
+            flex-shrink: 0;
+            border-radius: 23.674px;
+        }
+        
+        .header{
+            font-size: 21.348px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+        }
+        
+        article{
+            p{
+                font-size: 14.232px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: 0.119px;
+                
+                span{
+                    font-size: 16.604px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    
+                    svg{
+                        font-size: 16.604px;
+                        padding: 5px 5px 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}

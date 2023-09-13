@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { nftLeaders } from '../../data/DATA';
 import Card from '../card/Card';
 import SlideButtons from '../slideButtons/SlideButtons';
@@ -19,9 +19,19 @@ function SamplePrevArrow(props:any) {
   
 const MySlider:React.FC = () => {
 
+    const [width, setWidth] = useState<number>(0);
+
+    const checkWidth = (width: number) => {
+        if(width > 900) return 4
+        if(width <= 900 && width > 750) return 3
+        if(width <= 750 && width > 600) return 2
+        if(width < 650) return 1.4
+        return 0
+    }
+
     const settings = {
         className: styles.slider,
-        slidesToShow: 3.5,
+        slidesToShow: checkWidth(width),
         speed: 500,
         swipeToSlide: true,
         slidesToScroll: 1,
@@ -42,6 +52,7 @@ const MySlider:React.FC = () => {
             sliderRef.current.slickPrev();
         }
     };
+    useEffect(()=>window.addEventListener('resize', ()=>setWidth(window.innerWidth)), []);
 
   return (
     

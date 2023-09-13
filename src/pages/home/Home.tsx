@@ -10,11 +10,11 @@ const Home:React.FC = () => {
   return (
     <>
       <Preview />
-      {/* <WeeklyTop /> */} {/*NONE*/}
-      <TopCollection />
+      <WeeklyTop />
+      <TopCollection header='Top Collection'/>
       <ExploreMarketplace />
       <JustUnleash />
-      {/* <CreateSell /> */}
+      <CreateSell />
     </>
   )
 }
