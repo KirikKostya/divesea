@@ -52,7 +52,11 @@ const MySlider:React.FC = () => {
             sliderRef.current.slickPrev();
         }
     };
-    useEffect(()=>window.addEventListener('resize', ()=>setWidth(window.innerWidth)), []);
+
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>setWidth(window.innerWidth))
+        setWidth(window.innerWidth)
+    }, []);
 
   return (
     

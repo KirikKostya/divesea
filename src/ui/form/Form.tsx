@@ -1,23 +1,32 @@
 import React from 'react';
+import { IData } from '../../pages/sell/Sell';
+import {UseFormRegister, FieldErrors} from 'react-hook-form'
 import styles from './Form.module.scss';
 
 interface IFormProps{
     header: string
+    name: "photo" | "name" | "description" | "royalty" | "size" | "price" | "tags" | "inStock"
     placeholder: string
     isTextarea?: boolean
-    onChange: React.Dispatch<React.SetStateAction<string>>
-    value: string
+    register?: UseFormRegister<IData>
+    error: FieldErrors<IData>
 } 
-const Form:React.FC<IFormProps> = ({header, placeholder, isTextarea, onChange, value}) => {
+const Form:React.FC<IFormProps> = ({header, placeholder, isTextarea, register, name, error}) => {
+
   return (
     <label className={styles.form}>
         <h3 className={styles.header}>{header}</h3>
         {
             isTextarea
-                ? <textarea value={value} onChange={(e:any)=>onChange(e.target.value)} className={`${styles.input} ${styles.textArea}`} placeholder={placeholder} />
-                    : <input value={value} onChange={(e:any)=>onChange(e.target.value)} type="text" placeholder={placeholder} className={styles.input} />
-
+                ? <textarea {...register!(name)
+                            } className={`${styles.input} ${styles.textArea}`} placeholder={placeholder} />
+                    : <input {...register!(name, 
+                                {
+                                  required: 'Обязательное поле!'
+                                })
+                              } type="text" placeholder={placeholder} className={styles.input} />
         }
+        {error[name] && <span className={styles.errorMessage}>{error[name]?.message}</span>}
     </label>
   )
 }

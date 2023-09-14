@@ -29,7 +29,7 @@ const UpNavigation: React.FC = () => {
             <span><Search /></span>
             <input placeholder='Search Art Work / Creator'/>
           </label>
-          <Button name='Connect Wallet' theme='black' className={styles.btn} />
+          <Button onClick={()=>nav('/SELL')} name='Connect Wallet' theme='black' className={styles.btn} />
       </nav> 
       <ul className={`${styles.downMenu} ${isOpen ? styles.open : '' }`}>
         <li><NavLink to='/DISCOVER' className={({isActive})=>isActive ? styles.active : styles.navLink}>DISCOVER</NavLink></li>
